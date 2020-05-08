@@ -4,6 +4,7 @@ canvas.height = document.documentElement.clientHeight//拉伸canvas会变形，�
 let ctx = canvas.getContext("2d");
 ctx.fillStyle = "black";//填充样式
 ctx.strokeStyle = 'none'
+ctx.lineWidth = 8
 var isTouchDevice = 'ontouchstart' in document.documentElement//判断是否在移动端
 function drawLine(x1, y1, x2, y2) {
     ctx.beginPath();
